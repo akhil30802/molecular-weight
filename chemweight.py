@@ -3,6 +3,7 @@
 #  chemweight.py
 #  
 import re
+# The masses of elements
 mass = {
   "H":	1.00794,
   "He":	4.002602,
@@ -115,6 +116,7 @@ mass = {
   "Mt":	266,
 }
 
+# Calculates the weight
 def calculate_weight(chem):
 	s = re.findall('([A-Z][a-z]?)([0-9]*)', chem)
 	compoundweight = 0
